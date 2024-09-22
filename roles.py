@@ -252,7 +252,8 @@ class Protagonist:
             self.quests[quest_name] = quest
             self.take_answer(True)
             print(f"You accepted the quest: {quest_name}")
-            print(f"{quest["description"]}\n")
+            desc = quest["description"]
+            print(f"{desc}\n")
 
     def check_quests(self, action_type: str, action_value: str) -> None:
         """
@@ -272,7 +273,7 @@ class Protagonist:
             self.quests[action_value]["done"] = True
             self.hp += quest.get("health", 0)
             self.level_points += quest.get("level_points", 0)
-            print(f"Quest '{action_value}' completed! You gained {quest["health"]} HP and {quest["level_points"]} level points.\n")
+            print(f"Quest '{action_value}' completed! You gained {self.hp} HP and {self.level_points} level points.\n")
             self.quests[action_value] = {"done": True}
 
         elif action_type == "project":
@@ -283,8 +284,10 @@ class Protagonist:
         Prints the description of the current location.
         """
         location = self.game_map.get(self.current_location)
+        name = location['name']
+        desc = location['description']
         if location:
-            print(f"You are at {location['name']}. {location['description']}\n")
+            print(f"You are at {name}. {desc}\n")
         else:
             print("You are in an unknown place.\n")
 
@@ -410,8 +413,9 @@ class NPC():
             if selected_phrase == item.get("phrase"):
                 self.give(protagonist, item["name"])
                 item["amount"] -= 1
-                protagonist.heal(item["mental_health"])
-                print(f"You healed {item['mental_health']} HP.\n")
+                hp = item['mental_health']
+                protagonist.heal(hp)
+                print(f"You healed {hp} HP.\n")
                 return
 
     def give_quest(self, protagonist: "Protagonist", quest: Dict[str, Any]) -> None:
