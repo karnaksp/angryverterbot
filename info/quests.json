@@ -1,0 +1,259 @@
+{
+    "Calculator v2": {
+        "name": "Calculator v2",
+        "description": "Your task is to finally finish 'Calculator v2' project.",
+        "health": 23,
+        "level_points": 150,
+        "done": false,
+        "phrase": "I don't give a shit, motherfaka, cmon lets do calculator on c++",
+        "type": "project",
+        "location_id": "8"
+    },
+    "SQL Bootcamp": {
+        "name": "SQL Bootcamp",
+        "description": "You need to begin SQL Bootcamp withoun delays.",
+        "health": 35,
+        "level_points": 300,
+        "done": false,
+        "phrase": "If SQL doesn't kill you, nothing will. Time to suffer!",
+        "type": "project",
+        "location_id": "7"
+    },
+    "Containers": {
+        "name": "Containers",
+        "description": "It's time to finish the most resource-consuming project - prepare to weeks od slepless nights.",
+        "health": 50,
+        "level_points": 400,
+        "done": false,
+        "phrase": "Containers: because life's too short for easy projects.",
+        "type": "project",
+        "location_id": "1"
+    },
+    "Fix Legacy Code": {
+        "name":"Fix Legacy Code",
+        "description": "Your task is to fix the legacy code that nobody understands. Good luck with that mess!",
+        "health": 20,
+        "level_points": 250,
+        "done": false,
+        "type": "project",
+        "phrase": "Oh, so you think you can fix this ancient code? Hahaha, good luck!",
+        "location_id": "5"
+    },
+    "Refactor Monolith": {
+        "name":"Refactor Monolit",
+        "description": "Refactor the monolithic codebase that has more spaghetti than an Italian restaurant.",
+        "health": 30,
+        "level_points": 350,
+        "done": false,
+        "type": "project",
+        "phrase": "Ready to dive into the monolith? Prepare for a nightmare!",
+        "location_id": "6"
+    },
+    "CICD Project": {
+        "name":"CICD Project",
+        "description": "Your task for now is to finish Devops branch - so finish last Devops' project. ",
+        "health": 91,
+        "level_points": 600,
+        "done": false,
+        "phrase": "CICD: Because you didn't hate yourself enough already.",
+        "type": "project",
+        "location_id": "2"
+    },
+    "Debug Infinite Loop": {
+        "name":"Debug Infinite Loop",
+        "description": "Identify and fix the infinite loop that causes the system to crash every 5 minutes.",
+        "health": 40,
+        "level_points": 450,
+        "done": false,
+        "type": "project",
+        "phrase": "Caught in an infinite loop? Better find that bug before it drives you mad!",
+        "location_id": "3"
+    },
+    "Upgrade Deprecated Libraries": {
+        "name":"Upgrade Deprecated Libraries",
+        "description": "Update all deprecated libraries to their latest versions and hope nothing breaks.",
+        "health": 35,
+        "level_points": 400,
+        "done": false,
+        "type": "project",
+        "phrase": "Upgrading deprecated libraries, huh? Brace yourself for a rollercoaster!",
+        "location_id": "4"
+    },
+    "Fix Security Vulnerability": {
+        "name":"Fix Security Vulnerability",
+        "description": "Patch the security vulnerability that's been exploited by every hacker on the planet.",
+        "health": 45,
+        "level_points": 500,
+        "done": false,
+        "type": "project",
+        "phrase": "A security vulnerability, you say? Get ready for a wild ride through the dark web!",
+        "location_id": "5"
+    },
+    "Optimize Database Queries": {
+        "name": "Optimize Database Queries",
+        "description": "Refactor inefficient SQL queries to improve database performance.",
+        "health": 40,
+        "level_points": 450,
+        "done": false,
+        "type": "project",
+        "phrase": "Database queries slowing you down? Time to speed things up!",
+        "location_id": "6"
+    },
+    "Create RESTful API": {
+        "name": "Create RESTful API",
+        "description": "Develop a RESTful API for managing user data with proper authentication.",
+        "health": 50,
+        "level_points": 1200,
+        "type": "project",
+        "done": false,
+        "phrase": "Building an API? Don’t forget to lock the doors with authentication!",
+        "location_id": "7"
+    },
+    "Implement Responsive Design": {
+        "name": "Implement Responsive Design",
+        "description": "Make the website mobile-friendly by implementing responsive design principles.",
+        "health": 30,
+        "level_points": 800,
+        "type": "project",
+        "done": false,
+        "phrase": "Responsive design, eh? Let’s make that website shine on all devices!",
+        "location_id": "8"
+    },
+    "Automate Testing Suite": {
+        "name": "Automate Testing Suite",
+        "description": "Create automated tests to ensure code quality and reduce manual testing efforts.",
+        "health": 45,
+        "level_points": 500,
+        "type": "project",
+        "done": false,
+        "phrase": "Time to automate those tests! Manual testing is so last season.",
+        "location_id": "9"
+    },
+    "Integrate Third-Party Service": {
+        "name": "Integrate Third-Party Service",
+        "description": "Integrate a third-party service for payments to streamline transactions.",
+        "health": 40,
+        "level_points": 1080,
+        "type": "project",
+        "done": false,
+        "phrase": "Integrating payments? Don’t let those transactions fall through the cracks!",
+        "location_id": "14"
+    },
+    "Migrate Legacy Code": {
+        "name": "Migrate Legacy Code",
+        "description": "Migrate the legacy codebase to a modern framework and improve maintainability.",
+        "health": 50,
+        "level_points": 1500,
+        "type": "project",
+        "done": false,
+        "phrase": "Legacy code, huh? Time to give it a much-needed makeover!",
+        "location_id": "10"
+    },
+    "Build a Single Page Application": {
+        "name": "Build a Single Page Application",
+        "description": "Create a single-page application using React or Vue.js with a smooth user experience.",
+        "health": 30,
+        "level_points": 1000,
+        "done": false,
+        "type": "project",
+        "phrase": "Single page applications are the future! Let’s make it seamless!",
+        "location_id": "11"
+    },
+    "Develop Interactive Game": {
+        "name": "Develop Interactive Game",
+        "description": "Create a simple interactive game using HTML5 and JavaScript.",
+        "health": 50,
+        "level_points": 1000,
+        "done": false,
+        "type": "project",
+        "phrase": "Game development? Let’s bring your ideas to life!",
+        "location_id": "1"
+    },
+    "Create Data Visualization Dashboard": {
+        "name": "Create Data Visualization Dashboard",
+        "description": "Build an interactive dashboard using D3.js or Chart.js to visualize data trends.",
+        "health": 40,
+        "level_points": 1050,
+        "done": false,
+        "type": "project",
+        "phrase": "Data visualization is key! Let’s make those insights pop!",
+        "location_id": "1"
+    },
+    "Build a Mobile Game": {
+        "name": "Build a Mobile Game",
+        "description": "Develop a mobile game using Unity or Godot with engaging gameplay mechanics.",
+        "health": 50,
+        "level_points": 1050,
+        "done": false,
+        "type": "project",
+        "phrase": "Mobile games are the way to go! Let’s captivate your audience!",
+        "location_id": "2"
+    },
+    "Perform Exploratory Data Analysis": {
+        "name": "Perform Exploratory Data Analysis",
+        "description": "Analyze a dataset to discover patterns and insights using Python and Pandas.",
+        "health": 45,
+        "level_points": 500,
+        "done": false,
+        "type": "project",
+        "phrase": "Data analysis awaits! Let’s uncover hidden gems!",
+        "location_id": "2"
+    },
+    "Create Machine Learning Model": {
+        "name": "Create Machine Learning Model",
+        "description": "Build and train a machine learning model using scikit-learn to predict outcomes.",
+        "health": 50,
+        "level_points": 1000,
+        "done": false,
+        "type": "project",
+        "phrase": "Ready to dive into machine learning? Let’s predict the future!",
+        "location_id": "2"
+    },
+    "Provide Feedback on Peer’s Project": {
+        "name": "Feedback on Peer’s Project",
+        "description": "You task is to provide your honest opinion on peer's work. Find Odiswhis and help her with her project.",
+        "health": 60,
+        "level_points": 500,
+        "done": false,
+        "phrase": "Tear apart your peer's dreams with some 'constructive' feedback.",
+        "type": "interaction",
+        "npc_name": "Odiswhis",
+        "location_id": "3"
+    },
+    "Get internship": {
+        "name": "Internship",
+        "description": "You task is to finally get internship. Go talk to ADM.",
+        "health": 100,
+        "level_points": 1000,
+        "done": false,
+        "phrase": "Get an internship or keep living with your parents. Your choice.",
+        "type": "interaction",
+        "npc_type": "ADM",
+        "location_id": "4"
+
+    },
+    "Return Karnaksp's item": {
+        "name":"Item's return",
+        "description": "You took t-shirt item from ADM for peer Karnaksp. Please, return it to him",
+        "health": 0,
+        "level_points": 100,
+        "type": "item_transfer",
+        "done": false,
+        "phrase": "Someone have just bought and item in school 21 shop...",
+        "npc_name": "Karnaks Puck",
+        "item": "t-shirt 'School 21' 2.0",
+        "location_id": "5"
+    },
+    "Gift for a Peer": {
+        "name": "Gift for a Peer",
+        "description": "Today you woke up in a great mood. You decided to give away stikers to the first Peer you meet.",
+        "health": 0,
+        "level_points": 50,
+        "type": "item_transfer",
+        "done": false,
+        "phrase": "Someone needs to be cheered up!",
+        "npc_type": "Peer",
+        "item": "stickerpack by School 21",
+        "location_id": "6"
+    }
+}

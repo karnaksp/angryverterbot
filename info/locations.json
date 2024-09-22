@@ -1,0 +1,99 @@
+{
+    "1": {
+        "name": "Planet Express",
+        "description": "A bustling delivery company in the year 3000.",
+        "universe": "Futurama",
+        "connections": {
+            "East": "2"
+        }
+    },
+    "2": {
+        "name": "Shiganshina District",
+        "description": "A walled city on the frontier, always under threat of Titans.",
+        "universe": "Attack on Titan",
+        "connections": {
+            "West": "1",
+            "South": "3"
+        }
+    },
+    "3": {
+        "name": "Night City",
+        "description": "A sprawling cyberpunk metropolis, full of neon lights and danger.",
+        "universe": "Cyberpunk 2077",
+        "connections": {
+            "North": "2",
+            "East": "4"
+        }
+    },
+    "4": {
+        "name": "Konoha Village",
+        "description": "A peaceful village hidden in the leaves, home to powerful ninja.",
+        "universe": "Naruto",
+        "connections": {
+            "West": "3",
+            "South": "5"
+        }
+    },
+    "5": {
+        "name": "Targoviste",
+        "description": "An ancient city haunted by the presence of vampires.",
+        "universe": "Castlevania",
+        "connections": {
+            "North": "4",
+            "East": "6"
+        }
+    },
+    "6": {
+        "name": "Grid",
+        "description": "A digital frontier where programs come to life, surrounded by neon.",
+        "universe": "Tron",
+        "connections": {
+            "West": "5",
+            "North": "7"
+        }
+    },
+    "7": {
+        "name": "Hogwarts",
+        "description": "The famous school of witchcraft and wizardry, full of magical secrets.",
+        "universe": "Harry Potter",
+        "connections": {
+            "South": "6",
+            "East": "8"
+        }
+    },
+    "8": {
+        "name": "Westeros",
+        "description": "A land of political intrigue and warring kingdoms.",
+        "universe": "Game of Thrones",
+        "connections": {
+            "West": "7",
+            "North": "9"
+        }
+    },
+    "9": {
+        "name": "Citadel",
+        "description": "A hub for interdimensional travelers, full of alternate realities.",
+        "universe": "Rick and Morty",
+        "connections": {
+            "South": "8",
+            "East": "10"
+        }
+    },
+    "10": {
+        "name": "Ghost Zone",
+        "description": "A parallel dimension inhabited by ghosts and spirits.",
+        "universe": "Danny Phantom",
+        "connections": {
+            "West": "9",
+            "North": "11"
+        }
+    },
+    "11": {
+        "name": "Mushroom Kingdom",
+        "description": "A colorful world filled with adventure and danger, ruled by Princess Peach.",
+        "universe": "Super Mario",
+        "connections": {
+            "South": "10"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "name": "👕 T-shirt",
+            "phrase": "I want to take your sweatshirt, but don't worry, I'll leave you with despair.",
+            "mental_health": 15,
+            "amount": 1
+        },
+        {
+            "name": "🗿 Tribe figurine",
+            "phrase": "This tribe figurine looks nice. Reminds me of your social life - non-existent.",
+            "mental_health": 30,
+            "amount": 1
+        },
+        {
+            "name": "🧥 t-shirt 'School 21' 2.0",
+            "phrase": "Hey, nice t-shirt! Too bad it won't help you in coding.",
+            "mental_health": 15,
+            "amount": 1
+        },
+        {
+            "name": "☕ Thermomug",
+            "phrase": "Thermomug Spacecats? You really are clinging to sanity, aren't you?",
+            "strength": 27,
+            "mental_health": 5,
+            "amount": 1
+        },
+        {
+            "name": "📦 Stickerpack",
+            "phrase": "Stickerpack by School 21? That’s cute. It’s like a participation award for suffering.",
+            "mental_health": 5,
+            "amount": 1
+        },
+        {
+            "name": "🧴 Head & Shoulders",
+            "phrase": "You're ready to face anything with Head & Shoulders. Confidence level: maximum!",
+            "strength": 10,
+            "mental_health": 10,
+            "amount": 1
+        },
+        {
+            "name": "🌡️ Coffee thermos",
+            "phrase": "A thermos of coffee? The fuel of champions and coding nights.",
+            "strength": 20,
+            "mental_health": 8,
+            "amount": 1
+        }
+    ]
+}
