@@ -1,6 +1,5 @@
 colorlog
 aiogram
-logging
 asyncio
 sphinx
 sphinx-autodoc-typehints
