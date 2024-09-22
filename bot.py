@@ -333,15 +333,15 @@ async def show_location_info(message: types.Message):
     direction_keyboard.adjust(2)
 
     await message.answer(
-        text=f"Location: {current_location['name']}\n\nDescription: {current_location['description']}",
+        text=f"Location: {current_location['name']}\n\nDescription: {current_location['description']}\n\nFrom this location you can go to direction:",
         reply_markup=direction_keyboard.as_markup(),
     )
     await message.answer(
-        text="Verters in this location:",
+        text="In this location you can start project:",
         reply_markup=verter_keyboard.as_markup(),
     )
     await message.answer(
-        text="NPCs in this location:",
+        text="Try speakin with Peer in this location:",
         reply_markup=npc_keyboard.as_markup(),
     )
 

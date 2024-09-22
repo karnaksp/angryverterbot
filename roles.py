@@ -109,22 +109,17 @@ class Protagonist:
 
             if enemy_rand > protagonist_rand:
                 print(
-                    f"Peers said you completed the project "
-                    f"with: {protagonist_rand:.2f}, Verter rated your project: {
-                        enemy_rand}. You are the best! and you're hp increase by 1 point\n"
+                    f"Peers said you completed the project with: {protagonist_rand}, Verter rated your project: {enemy_rand}. You are the best! and you're hp increase by 1 point\n"
                 )
                 self.heal(1)
             if enemy_rand > 80:
-                print(f"You successfully completed the project "
-                      f"{enemy.name}!\n")
+                print(f"You successfully completed the project {enemy.name}!\n")
                 self.advance_knowledge(enemy.points)
                 self.advance_level()
                 self.check_quests("project", enemy.name)
             else:
                 print(
-                    f"The project '"
-                    f"{enemy.name}' was too difficult. , Verter rated your project: {
-                        enemy_rand}. You lost 10% of your nerve cells.\n"
+                    f"The project '{enemy.name}' was too difficult. , Verter rated your project: {enemy_rand}. You lost 10% of your nerve cells.\n"
                 )
                 self.take_hit()
         else:
@@ -277,8 +272,7 @@ class Protagonist:
             self.quests[action_value]["done"] = True
             self.hp += quest.get("health", 0)
             self.level_points += quest.get("level_points", 0)
-            print(f"Quest '{action_value}' completed! You gained {quest["health"]} "
-                  f"HP and {quest["level_points"]} level points.\n")
+            print(f"Quest '{action_value}' completed! You gained {quest["health"]} HP and {quest["level_points"]} level points.\n")
             self.quests[action_value] = {"done": True}
 
         elif action_type == "project":
