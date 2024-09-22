@@ -7,7 +7,7 @@ COPY . /app
 RUN python3 -m pip install --upgrade pip
 
 RUN apt-get update && \
-    apt-get install -y make && \
+    apt-get install -y make python3-sphinx && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

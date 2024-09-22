@@ -14,7 +14,7 @@ create_venv:
 	@./cat.sh "Create virtual env..." 10
 	@python3 -m venv $(VENV_DIR)
 	@bash -c "source $(VENV_DIR)/bin/activate && \
-	pip install -r $(REQUIREMENTS_FILE) && sudo apt install python3-sphinx -y"
+	pip install -r $(REQUIREMENTS_FILE)"
 
 start_bot:
 	@./cat.sh "Start play game..." 10
