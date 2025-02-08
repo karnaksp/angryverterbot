@@ -11,7 +11,6 @@ VENV_DIR      = myenv
 all: cat clean
 
 create_venv:
-	@./cat.sh "Create virtual env..." 10
 	@python3 -m venv $(VENV_DIR)
 	@bash -c "source $(VENV_DIR)/bin/activate && \
 	pip install -r $(REQUIREMENTS_FILE)"
