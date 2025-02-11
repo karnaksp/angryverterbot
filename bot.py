@@ -1,5 +1,5 @@
 """
-Telegram bot on aiogram and asyncio for play in s21_school text game
+Telegram bot for play in s21_school text game
 """
 
 from aiogram import Bot, Dispatcher, types
