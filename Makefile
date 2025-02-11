@@ -22,7 +22,7 @@ start_bot:
 
 html:
 	@bash -c "source $(VENV_DIR)/bin/activate && \
-	$(VENV_DIR)/bin/$(SPHINXBUILD) -M html $(SOURCEDIR) $(BUILDDIR) $(SPHINXOPTS)"
+	$(VENV_DIR)/bin/$(SPHINXBUILD) $(SOURCEDIR) $(BUILDDIR) $(SPHINXOPTS)"
 
 cat:
 	@chmod +x cat.sh
