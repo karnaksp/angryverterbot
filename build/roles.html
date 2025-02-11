@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module roles &#8212; angryVerter 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module load_data" href="load_data.html" />
+    <link rel="prev" title="How to Launch the Bot 🤖" href="launch_bot.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-0">
+<span id="module-roles"></span><h1>Module roles<a class="headerlink" href="#module-0" title="Link to this heading">¶</a></h1>
+<p>Module containing classes for creating game roles.</p>
+<p>Game Roles:
+1. Protagonist - The main character, a student at a programming school.
+2. NPC - Characters that can be interacted with (Peers).
+3. Enemy (Projects, Verter) - Enemies that must be fought (projects and their verification system).</p>
+<p>The protagonist interacts with NPCs, completes projects, and their knowledge and skills grow depending on the success of the projects.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="roles.Enemy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">roles.</span></span><span class="sig-name descname"><span class="pre">Enemy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Enemy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class representing an enemy chrarcter.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Enemy.quest">
+<span class="sig-name descname"><span class="pre">quest</span></span><a class="headerlink" href="#roles.Enemy.quest" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary that provides information about enemy’s health and points protagonist will be awarded with after enemy’s defeat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[Any,Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Enemy.hp">
+<span class="sig-name descname"><span class="pre">hp</span></span><a class="headerlink" href="#roles.Enemy.hp" title="Link to this definition">¶</a></dt>
+<dd><p>An amount of enemy’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Enemy.points">
+<span class="sig-name descname"><span class="pre">points</span></span><a class="headerlink" href="#roles.Enemy.points" title="Link to this definition">¶</a></dt>
+<dd><p>An amount of points protagonist will be awarded with enemy’s defeat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="roles.NPC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">roles.</span></span><span class="sig-name descname"><span class="pre">NPC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quests</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phrases</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inventory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class representing an NPC, a type of basic non-playable character.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.NPC.phrases">
+<span class="sig-name descname"><span class="pre">phrases</span></span><a class="headerlink" href="#roles.NPC.phrases" title="Link to this definition">¶</a></dt>
+<dd><p>A list of phrases that the NPC can say.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.NPC.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#roles.NPC.location" title="Link to this definition">¶</a></dt>
+<dd><p>The location where Peer is situated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.NPC.quest">
+<span class="sig-name descname"><span class="pre">quest</span></span><a class="headerlink" href="#roles.NPC.quest" title="Link to this definition">¶</a></dt>
+<dd><p>The current quest assigned to the Peer, selected randomly from the provided list of quests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Dict[str, Any] or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.NPC.inventory">
+<span class="sig-name descname"><span class="pre">inventory</span></span><a class="headerlink" href="#roles.NPC.inventory" title="Link to this definition">¶</a></dt>
+<dd><p>A  dictionary of items NPC has and it’s amount.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.NPC.give">
+<span class="sig-name descname"><span class="pre">give</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protagonist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC.give" title="Link to this definition">¶</a></dt>
+<dd><p>Provides the protagonist with the item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> (<em>str</em>) – The name of the item</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.NPC.give_quest">
+<span class="sig-name descname"><span class="pre">give_quest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protagonist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quest</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC.give_quest" title="Link to this definition">¶</a></dt>
+<dd><p>Provides the protagonist with a quest.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>protagonist</strong> (<a class="reference internal" href="#roles.Protagonist" title="roles.Protagonist"><em>Protagonist</em></a>) – The protagonist interracting with the NPC.</p></li>
+<li><p><strong>quest</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – The quest that protagonist will be provided with</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.NPC.select_random_quest">
+<span class="sig-name descname"><span class="pre">select_random_quest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quests_json</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC.select_random_quest" title="Link to this definition">¶</a></dt>
+<dd><p>Selects a random quest from the given quests JSON and add phrase from quest to all pull phrases.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>quests_json</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – A dictionary of quests where each key is a quest name and the value is a dictionary with quest details.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary with the selected quest details, including the quest name.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.NPC.take">
+<span class="sig-name descname"><span class="pre">take</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC.take" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a given item to NPC’s inventory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> (<em>str</em>) – The name of the item</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.NPC.talk">
+<span class="sig-name descname"><span class="pre">talk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protagonist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.NPC.talk" title="Link to this definition">¶</a></dt>
+<dd><p>Communicate with the protagonist. If the NPC offers a quest or item, handle it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>protagonist</strong> (<a class="reference internal" href="#roles.Protagonist" title="roles.Protagonist"><em>Protagonist</em></a>) – The protagonist interacting with the NPC.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="roles.Protagonist">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">roles.</span></span><span class="sig-name descname"><span class="pre">Protagonist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Head</span> <span class="pre">&amp;</span> <span class="pre">Shoulders'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class representing the protagonist (main character) of the game.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">----------</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#roles.Protagonist.id" title="Link to this definition">¶</a></dt>
+<dd><p>str
+Unique identifier of the player.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#roles.Protagonist.name" title="Link to this definition">¶</a></dt>
+<dd><p>str
+Name of the player.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.hp">
+<span class="sig-name descname"><span class="pre">hp</span></span><a class="headerlink" href="#roles.Protagonist.hp" title="Link to this definition">¶</a></dt>
+<dd><p>int
+Number of “nerve cells” (life points) of the player.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.level_points">
+<span class="sig-name descname"><span class="pre">level_points</span></span><a class="headerlink" href="#roles.Protagonist.level_points" title="Link to this definition">¶</a></dt>
+<dd><p>int
+Experience points used for leveling up.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.level">
+<span class="sig-name descname"><span class="pre">level</span></span><a class="headerlink" href="#roles.Protagonist.level" title="Link to this definition">¶</a></dt>
+<dd><p>int
+Current level of the player.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.inventory">
+<span class="sig-name descname"><span class="pre">inventory</span></span><a class="headerlink" href="#roles.Protagonist.inventory" title="Link to this definition">¶</a></dt>
+<dd><p>DefaultDict[str, int]
+Inventory of the player.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Protagonist.quests">
+<span class="sig-name descname"><span class="pre">quests</span></span><a class="headerlink" href="#roles.Protagonist.quests" title="Link to this definition">¶</a></dt>
+<dd><p>Dict[str, Dict[str, Union[int, bool]]]
+Active quests of the player.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.accept_quest">
+<span class="sig-name descname"><span class="pre">accept_quest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quest</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.accept_quest" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist accepts a quest from an NPC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>quest</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – Dict[str, Union[int, bool]]
+The quest being accepted.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.advance_knowledge">
+<span class="sig-name descname"><span class="pre">advance_knowledge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.advance_knowledge" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist improves their knowledge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – int
+The amount of knowledge gained (default is 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.advance_level">
+<span class="sig-name descname"><span class="pre">advance_level</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.advance_level" title="Link to this definition">¶</a></dt>
+<dd><p>Method to update the player’s level based on their level points.
+Levels progress according to:
+- Level 2: &gt; 100 points
+- Level 3: &gt; 300 points
+- Level 4: &gt; 700 points
+- Level 5: &gt; 1500 points
+- And so on up to level 9.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.attack">
+<span class="sig-name descname"><span class="pre">attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enemy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.attack" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist attempts to complete a project by “attacking” an enemy (project).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>enemy</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#roles.Enemy" title="roles.Enemy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Enemy</span></code></a></span>) – Enemy
+The enemy (project) being interacted with.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.check_quests">
+<span class="sig-name descname"><span class="pre">check_quests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.check_quests" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the conditions for any quests are fulfilled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>action_type</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – str
+The type of action performed (e.g., “project”, “interaction”, “item_transfer”).</p></li>
+<li><p><strong>action_value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – str
+The value associated with the action (e.g., project name, NPC name, item name).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.get_location_by_name">
+<span class="sig-name descname"><span class="pre">get_location_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.get_location_by_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.give">
+<span class="sig-name descname"><span class="pre">give</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">npc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.give" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist gives an item to an NPC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>npc</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#roles.NPC" title="roles.NPC"><code class="xref py py-class docutils literal notranslate"><span class="pre">NPC</span></code></a></span>) – NPC
+The NPC receiving the item.</p></li>
+<li><p><strong>item</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – str
+The name of the item being given.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+<section id="returns">
+<h2>Returns:<a class="headerlink" href="#returns" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>:</dt><dd><dl class="simple">
+<dt>bool</dt><dd><p>Whether the item was given or not.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.go">
+<span class="sig-name descname"><span class="pre">go</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.go" title="Link to this definition">¶</a></dt>
+<dd><p>Move to another location in the given direction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.heal">
+<span class="sig-name descname"><span class="pre">heal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.heal" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist recovers a certain number of nerve cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – int
+The number of nerve cells recovered (default is 10).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.take">
+<span class="sig-name descname"><span class="pre">take</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.take" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist takes an item and adds it to their inventory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>item</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – str
+The name of the item to be added to the inventory.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.take_answer">
+<span class="sig-name descname"><span class="pre">take_answer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.take_answer" title="Link to this definition">¶</a></dt>
+<dd><p>Protagonist responds depending on whether they have the quest done or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>yes</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – bool
+The variable representing whether the quest is done or not.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.take_hit">
+<span class="sig-name descname"><span class="pre">take_hit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.take_hit" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist loses a certain number of nerve cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – int
+The number of nerve cells lost (default is -10).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.talk_to">
+<span class="sig-name descname"><span class="pre">talk_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">npc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.talk_to" title="Link to this definition">¶</a></dt>
+<dd><p>The protagonist interacts with an NPC and receives a random phrase in return.
+If the NPC is a Peer, handle quests and items as well.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>----------</strong></p></li>
+<li><p><strong>npc</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#roles.NPC" title="roles.NPC"><code class="xref py py-class docutils literal notranslate"><span class="pre">NPC</span></code></a></span>) – NPC
+The NPC being interacted with.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Protagonist.whereami">
+<span class="sig-name descname"><span class="pre">whereami</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#roles.Protagonist.whereami" title="Link to this definition">¶</a></dt>
+<dd><p>Prints the description of the current location.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="roles.Verter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">roles.</span></span><span class="sig-name descname"><span class="pre">Verter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phrases</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#roles.Verter" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#roles.Enemy" title="roles.Enemy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Enemy</span></code></a></p>
+<p>Class representing a Verter, a type of enemy character.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Verter.quest">
+<span class="sig-name descname"><span class="pre">quest</span></span><a class="headerlink" href="#roles.Verter.quest" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary that provides information about both enemy’s health and points protagonist will be awarded with after enemy’s defeat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[Any,Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Verter.hp">
+<span class="sig-name descname"><span class="pre">hp</span></span><a class="headerlink" href="#roles.Verter.hp" title="Link to this definition">¶</a></dt>
+<dd><p>An amount of enemy’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="roles.Verter.points">
+<span class="sig-name descname"><span class="pre">points</span></span><a class="headerlink" href="#roles.Verter.points" title="Link to this definition">¶</a></dt>
+<dd><p>An amount of points protagonist will be awarded with enemy’s defeat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="roles.Verter.attack">
+<span class="sig-name descname"><span class="pre">attack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#roles.Verter.attack" title="Link to this definition">¶</a></dt>
+<dd><p>Reduce Verter’s health by provided value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Amount of damage protagonist will get</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo.jpg" alt="Logo of angryVerter"/>
+            </a></p>
+<h1 class="logo"><a href="index.html">angryVerter</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual.html">Game Manual 🎮</a></li>
+<li class="toctree-l1"><a class="reference internal" href="launch_bot.html">How to Launch the Bot 🤖</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Module roles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#roles.Enemy"><code class="docutils literal notranslate"><span class="pre">Enemy</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Enemy.quest"><code class="docutils literal notranslate"><span class="pre">Enemy.quest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Enemy.hp"><code class="docutils literal notranslate"><span class="pre">Enemy.hp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Enemy.points"><code class="docutils literal notranslate"><span class="pre">Enemy.points</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#roles.NPC"><code class="docutils literal notranslate"><span class="pre">NPC</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.phrases"><code class="docutils literal notranslate"><span class="pre">NPC.phrases</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.location"><code class="docutils literal notranslate"><span class="pre">NPC.location</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.quest"><code class="docutils literal notranslate"><span class="pre">NPC.quest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.inventory"><code class="docutils literal notranslate"><span class="pre">NPC.inventory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.give"><code class="docutils literal notranslate"><span class="pre">NPC.give()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.give_quest"><code class="docutils literal notranslate"><span class="pre">NPC.give_quest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.select_random_quest"><code class="docutils literal notranslate"><span class="pre">NPC.select_random_quest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.take"><code class="docutils literal notranslate"><span class="pre">NPC.take()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.NPC.talk"><code class="docutils literal notranslate"><span class="pre">NPC.talk()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#roles.Protagonist"><code class="docutils literal notranslate"><span class="pre">Protagonist</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.id"><code class="docutils literal notranslate"><span class="pre">Protagonist.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.name"><code class="docutils literal notranslate"><span class="pre">Protagonist.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.hp"><code class="docutils literal notranslate"><span class="pre">Protagonist.hp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.level_points"><code class="docutils literal notranslate"><span class="pre">Protagonist.level_points</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.level"><code class="docutils literal notranslate"><span class="pre">Protagonist.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.inventory"><code class="docutils literal notranslate"><span class="pre">Protagonist.inventory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.quests"><code class="docutils literal notranslate"><span class="pre">Protagonist.quests</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.accept_quest"><code class="docutils literal notranslate"><span class="pre">Protagonist.accept_quest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.advance_knowledge"><code class="docutils literal notranslate"><span class="pre">Protagonist.advance_knowledge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.advance_level"><code class="docutils literal notranslate"><span class="pre">Protagonist.advance_level()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.attack"><code class="docutils literal notranslate"><span class="pre">Protagonist.attack()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.check_quests"><code class="docutils literal notranslate"><span class="pre">Protagonist.check_quests()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.get_location_by_name"><code class="docutils literal notranslate"><span class="pre">Protagonist.get_location_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.give"><code class="docutils literal notranslate"><span class="pre">Protagonist.give()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.go"><code class="docutils literal notranslate"><span class="pre">Protagonist.go()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.heal"><code class="docutils literal notranslate"><span class="pre">Protagonist.heal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.take"><code class="docutils literal notranslate"><span class="pre">Protagonist.take()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.take_answer"><code class="docutils literal notranslate"><span class="pre">Protagonist.take_answer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.take_hit"><code class="docutils literal notranslate"><span class="pre">Protagonist.take_hit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.talk_to"><code class="docutils literal notranslate"><span class="pre">Protagonist.talk_to()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Protagonist.whereami"><code class="docutils literal notranslate"><span class="pre">Protagonist.whereami()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#roles.Verter"><code class="docutils literal notranslate"><span class="pre">Verter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Verter.quest"><code class="docutils literal notranslate"><span class="pre">Verter.quest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Verter.hp"><code class="docutils literal notranslate"><span class="pre">Verter.hp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Verter.points"><code class="docutils literal notranslate"><span class="pre">Verter.points</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles.Verter.attack"><code class="docutils literal notranslate"><span class="pre">Verter.attack()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="load_data.html">Module load_data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="load_map.html">Module load_map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bot.html">Module bot</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="launch_bot.html" title="previous chapter">How to Launch the Bot 🤖</a></li>
+      <li>Next: <a href="load_data.html" title="next chapter">Module load_data</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, karnaksp, odiswish.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/roles.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
